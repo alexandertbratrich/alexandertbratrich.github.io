@@ -2,6 +2,22 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="theme-color" content="#333333">
+
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="google" content="nositelinkssearchbox">
+  <meta name="google" content="notranslate">
+
+
+  <meta name="keywords" content="Alexander Bratrich, Alexander T. Bratrich, Bratrich, Computer Science, Game Engineering" />
+  <meta name="description" content="The Life and Works of Alexander T. Bratrich." />
+  <meta name="author" content="Alexander T. Bratrich">
+
+  <meta name="format-detection" content="telephone=no">
+
   <title>Alexander T. Bratrich</title>
 
   <link rel="stylesheet" type="text/css" href="main.css">
@@ -18,21 +34,31 @@
         <p><strong>Alexander T. Bratrich</strong></p>
       </div>
       <div class="desc">
-        <p>Born and raised in Southern Bavaria, currently finishing his Master's degree in ›Game Engineering and Visual Computing‹. Ultimate goal is to work at any game dev company, preferably in Canada, and to finish all (or at least some of) my personal projects.</p>
+        <p>Born in Augsburg and raised in Ostallgäu. <script type="text/javascript">document.write('Approx. <span id="date1"></span> to <span id="date2"></span> Days until I finish my Master\'s degree in ›Game Engineering and Visual Computing‹.')</script><noscript>About to finish my Master's degree in ›Game Engineering and Visual Computing‹ in Summer 2020.</noscript> My ultimate Goal is to work at any game dev company, preferably in Canada, and to finish all (or at least some of) my personal projects.</p>
       </div>
-      <!--<div class="bar">
-        <div class="button"><p><i class="fa fa-address-card"></i></p></div>
+      <div class="bar">
+        <!--<div class="button"><p><i class="fa fa-address-card"></i></p></div>
         <div class="button"><p><i class="fa fa-envelope"></i></p></div>
         <div class="button"><p><i class="fa fa-phone"></i></p></div>
         <div class="button"><p><i class="fab fa-twitter"></i></p></div>
         <div class="button"><p><i class="fab fa-discord"></i></p></div>
-        <div class="button"><p><i class="fab fa-github"></i></p></div>
-      </div>-->
+        <div class="button"><p><i class="fab fa-github"></i></p></div>-->
+      </div>
     </div>
 
     <div class="segment less">
-      <small class="secondary"><p>More to come. — 2019</p></small>
+      <small class="secondary"><p>More to come<br/>2019-12-20</p></small>
     </div>
   </div>
+
+  <script type="text/javascript">
+    function daysTil(date){
+      let date1 = new Date(date)
+      let date2 = new Date()
+      return Math.floor((date1 - date2)/1000/60/60/24) +1 
+    }
+    document.getElementById("date1").innerHTML = daysTil("2020-07-31")
+    document.getElementById("date2").innerHTML = daysTil("2020-09-30")
+  </script>
 </body>
 </html>
