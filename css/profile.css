@@ -1,0 +1,155 @@
+#profile {
+  height: 256px;
+  width: calc(100% - 16px);
+  margin: 32px 0px 16px 16px;
+
+  background-color: var(--primary1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#profile .desc {
+  height: calc(100% - 32px);
+  width: calc(100% - 256px - 32px);
+  padding: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+#profile .desc .text {
+  height: 100%;
+}
+
+#profile .profilepic {
+  position: relative;
+  height: 256px;
+  width: 256px;
+
+  margin-top: -16px;
+  margin-left: -16px;
+
+  background-image: url('../imgs/profile2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-right: 16px solid var(--primary2);
+  border-bottom: 16px solid var(--primary3);
+
+  float: left;
+}
+
+#profile .profilepic:before {
+  content: '';
+  position: absolute;
+  top: 256px;
+  left: 0;
+
+  width: 0px;
+  height: 0px;
+
+  border-top: 16px solid var(--primary3);
+  border-left: 16px solid var(--neutral1);
+}
+
+#profile .profilepic:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 256px;
+
+  width: 0px;
+  height: 0px;
+  border-bottom: 16px solid var(--primary2);
+  border-right: 16px solid var(--neutral1);
+}
+
+/* #################################################### SOCIALS */
+
+#main.about .socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#main.about .social {
+  height: 32px;
+  width: 32px;
+  margin-right: 4px;
+  
+  background-color: var(--primary2);
+  overflow: hidden;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.3s ease;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50% auto;
+}
+
+#main.about .social a {
+  height: 100%;
+  width: 100%;
+
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main.about .social.youtube { background-image: url('../imgs/socials/youtube.png') }
+#main.about .social.twitter { background-image: url('../imgs/socials/twitter.png') }
+#main.about .social.discord { background-image: url('../imgs/socials/discord.png') }
+#main.about .social.github  { background-image: url('../imgs/socials/github.png') }
+#main.about .social.telegram { background-image: url('../imgs/socials/telegram.png') }
+#main.about .social.itchio { background-image: url('../imgs/socials/itchio.png') }
+#main.about .social.rss { background-image: url('../imgs/socials/rss.png') }
+#main.about .social.mail { background-image: url('../imgs/socials/mail.png') }
+#main.about .social.patreon { background-image: url('../imgs/socials/patreon.png');
+  width: 64px;
+  background-size: 75% auto;
+}
+#main.about .social.slowly {
+  background-size: auto 50%;
+  background-position: 8px;
+  background-image: url('../imgs/socials/slowly.png')
+}
+#main.about .social.slowly span {
+  opacity: 0;
+  padding: 8px;
+  margin-left: 24px;
+  margin-bottom: 0px;
+  font-size: small;
+  color: var(--neutral2);
+  transition: all 0.3s ease;
+}
+
+/* my anime: 2E51A2 */
+
+#main.about .social.youtube:hover { background-color: var(--youtube); }
+#main.about .social.twitter:hover { background-color: var(--twitter); }
+#main.about .social.discord:hover { background-color: var(--discord); }
+#main.about .social.github:hover  { background-color: var(--github); }
+#main.about .social.telegram:hover { background-color: var(--telegram); }
+#main.about .social.itchio:hover { background-color: var(--itchio); }
+#main.about .social.rss:hover { background-color: var(--rss); }
+#main.about .social.mail:hover { background-color: var(--mail); }
+#main.about .social.patreon:hover { background-color: var(--patreon); }
+#main.about .social.slowly:hover { 
+  background-color: var(--slowly);
+  width: 80px;
+}
+#main.about .social.slowly:hover span {
+  opacity: 1;
+}

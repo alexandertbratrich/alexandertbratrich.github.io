@@ -1,0 +1,652 @@
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Thin.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-ThinItalic.ttf);
+  font-style: italic;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-LightItalic.ttf);
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-MediumItalic.ttf);
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-Black.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto/Roboto-BlackItalic.ttf);
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* ################################################################## GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+small {
+  font-size: 10px;
+}
+
+h1, h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: #333;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+
+  background-color: #EEE;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  max-width: 720px;
+}
+
+/* ################################################################## TITLE */
+
+#title {
+  height: 128px;
+  width: calc(100%);
+  padding: 32px 0 32px 0;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+#title > a {
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#title h1 {
+  text-transform: capitalize;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#title .subtitle {
+  font-size: 10px;
+  color: #666;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#title .menu {
+  margin: 16px 0;
+  height: 32px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#title .menu .inner {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu .button {
+  height: 32px;
+  width: 64px; /* fallback / alternative */
+  width: calc((100% - 2 * 4px) / 3);
+  margin-right: 4px;
+  
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+
+  background-color: #AAA;
+  overflow: hidden;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+  /*-webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;*/
+}
+
+.menu .button:last-of-type {
+  margin-right: 0;
+}
+
+#title .menu .button.active,
+#title .menu .button.normal:hover {
+  background-color: #333;
+}
+
+#title .menu .button.active p,
+#title .menu .button.normal:hover p {
+  color: #EEE;
+}
+
+#title .menu .button a {
+  height: 100%;
+  width: 100%;
+
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ################################################################## BLOG */
+
+#blog {
+  min-height: calc(100% - 256px);
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+#blog .title{
+  height: 64px;
+  width: calc(100% - 32px);
+  padding: 64px 16px 16px 16px;
+
+  background-color: #EEE;
+
+  overflow: hidden;
+  border-bottom: 1px solid #AAA;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#blog .title .details {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#blog .title .details .date {
+  font-size: 10px;
+  color: #666;
+}
+
+#blog .title .details .tags .tag {
+  margin: 2px;
+  padding: 4px 8px;
+  
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  text-transform: capitalize;
+
+  cursor: pointer;
+  background-color: #DDD;
+  border-radius: 8px;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#blog .content {
+  height: auto;
+  width: calc(100% - 32px);
+  padding: 16px;
+
+  overflow: hidden;
+}
+
+#blog .content p{
+  margin-bottom: 16px;
+}
+
+/* ################################################################## PROJECTS */
+
+#projects {
+  min-height: calc(100% - 256px);
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+#projects .project {
+  position: relative;
+  height: 48px;
+  width: calc(100% - 16px);
+  margin-bottom: 8px;
+  padding: 8px;
+
+  background-color: #DDD;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#projects .project .badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+
+  margin: 2px;
+  padding: 4px 8px;
+  
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+
+  background-color: #CCC;
+  border-radius: 8px;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#projects .project .badge.done { background-color: rgba(0,255,0,0.25); }
+#projects .project .badge.wip { background-color: rgba(255,255,0,0.25); }
+
+/* ################################################################## BLOG ARCHIVE */
+
+#posts {
+  min-height: calc(100% - 256px);
+  width: 100%;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#posts .title {
+  width: calc(100% - 16px);
+  font-weight: bold;
+  padding: 8px;
+  text-align: left;
+}
+
+#posts .list {
+  width: 100%;
+  margin-bottom: 32px;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+#posts .post {
+  width: calc(100% - 16px);
+  padding: 8px;
+
+  border-bottom: 1px solid #DDD;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  -webkit-transition: background-color 0.3s ease;
+     -moz-transition: background-color 0.3s ease;
+      -ms-transition: background-color 0.3s ease;
+       -o-transition: background-color 0.3s ease;
+          transition: background-color 0.3s ease;
+}
+
+#posts .post:last-of-type {
+  border-bottom: none;
+}
+
+#posts .post .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#posts .post .details small {
+  font-size: 10px;
+  color: #666;
+  margin-left: 8px;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#posts .post:hover {
+  background-color: #DDD;
+  cursor: pointer;
+}
+
+#posts .post .tags .tag {
+  margin: 2px;
+  padding: 4px 8px;
+  
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+
+  cursor: pointer;
+  background-color: #DDD;
+  border-radius: 8px;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+  -webkit-transition: background-color 0.3s ease;
+     -moz-transition: background-color 0.3s ease;
+      -ms-transition: background-color 0.3s ease;
+       -o-transition: background-color 0.3s ease;
+          transition: background-color 0.3s ease;
+}
+
+#posts .post:hover .tags .tag {
+  background-color: #CCC;
+}
+
+/* ################################################################## ABOUT */
+
+#about {
+  min-height: calc(100% - 256px);
+  width: 100%;
+  overflow: hidden;
+}
+
+#about .profilepic {
+  float: left;
+  height: 256px;
+  width: 256px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+
+  background-image: url('./imgs/profile.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#about .desc{
+  float: right;
+  min-height: calc(256px - 32px);
+  width: calc(100% - 256px - 8px - 32px);
+  padding: 16px;
+  margin-bottom: 8px;
+
+  background-color: #FFF;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#about .desc .currentproject {
+  height: auto;
+  width: calc(100% - 16px);
+  padding: 8px;
+  background-color: #EEE;
+}
+
+#about .desc .currentproject p {
+  font-size: 10px;
+}
+
+#about .desc > p{
+  margin-bottom: 16px;
+}
+
+.socialwrap {
+  float: none;
+  clear: both;
+
+  padding: 8px;
+  background-color: #FFF;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.socialwrap p {
+  margin-bottom: 8px;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.socials .social {
+  height: 64px;
+  width: 64px;
+  margin-right: 4px;
+  
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+
+  background-color: #AAA;
+  overflow: hidden;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50% auto;
+}
+
+.socials .social a {
+  height: 100%;
+  width: 100%;
+
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials .social.youtube { background-image: url('socials/youtube.png') }
+.socials .social.twitter { background-image: url('socials/twitter.png') }
+.socials .social.discord { background-image: url('socials/discord.png') }
+.socials .social.github  { background-image: url('socials/github.png') }
+.socials .social.telegram { background-image: url('socials/telegram.png') }
+.socials .social.itchio { background-image: url('socials/itchio.png') }
+.socials .social.rss { background-image: url('socials/rss.png') }
+.socials .social.mail { background-image: url('socials/mail.png') }
+.socials .social.patreon { background-image: url('socials/patreon.png');
+  width: 64px;
+  background-size: 75% auto;
+}
+
+/* my anime: 2E51A2 */
+
+.socials .social.youtube:hover { background-color: #FF0000; }
+.socials .social.twitter:hover { background-color: #1da1f2; }
+.socials .social.discord:hover { background-color: #7289da; }
+.socials .social.github:hover  { background-color: #24292e; }
+.socials .social.telegram:hover { background-color: #2AABEE; }
+.socials .social.itchio:hover { background-color: #FA5C5C; }
+.socials .social.rss:hover { background-color: #FFA500; }
+.socials .social.mail:hover { background-color: #4B0082; }
+.socials .social.patreon:hover { background-color: #012847; }
+
+/* ################################################################## FOOTER */
+
+#footer {
+  height: 31px;
+  width: calc(100% - 32px);
+  padding: 16px;
+
+  overflow: hidden;
+  border-top: 1px solid #AAA;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#footer p {
+  font-size: 10px;
+  color: #666;
+}
+
+#footer a {
+  color: #666;
+}

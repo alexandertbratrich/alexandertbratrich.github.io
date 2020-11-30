@@ -1,0 +1,320 @@
+:root {
+  --primary5: #1C1082;
+  --primary4: #4F42B5; /* ocean blue */
+  --primary3: #8275E8; /* for the logo */
+  --primary2: #B5A8FF;
+  --primary1: #E8DBFF;
+
+  --neutral5: #444; /* for text */
+  --neutral4: #777; /* for secondary text */
+  --neutral3: #AAA; /* for borders */
+  --neutral2: #EEE; /* for bordered backgrounds */
+  --neutral1: #FFF; /* for the background */
+
+  --highlight5: #108282;
+  --highlight4: #42B5B5;
+  --highlight3: #75E8E8;
+  --highlight2: #A8FFFF;
+  --highlight1: #DBFFFF;
+
+  --positive5: #10821C;
+  --positive4: #42B56F;
+  --positive3: #75E882;
+  --positive2: #A8FFB5;
+  --positive1: #DBFFE8;
+
+  --warning5: #828210;
+  --warning4: #B5B542;
+  --warning3: #E8E875;
+  --warning2: #FFFFA8;
+  --warning1: #FFFFDB;
+
+  --negative5: #82101C;
+  --negative4: #B5426F;
+  --negative3: #E87582;
+  --negative2: #FFA8B5;
+  --negative1: #FFDBE8;
+
+  --youtube: #FF0000;
+  --twitter: #1da1f2;
+  --discord: #7289da;
+  --github: #24292e;
+  --telegram: #2AABEE;
+  --itchio: #FA5C5C;
+  --rss: #FFA500;
+  --slowly: #2a2f39;
+  --mail: #4B0082;
+  --patreon: #012847;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Thin.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-ThinItalic.ttf);
+  font-style: italic;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-LightItalic.ttf);
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-MediumItalic.ttf);
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Black.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-BlackItalic.ttf);
+  font-weight: 900;
+  font-style: italic;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.preload * {
+  transition: none !important;
+}
+
+p, span {
+  font-family: 'Roboto', sans-serif;
+  color: var(--neutral5);
+}
+
+h1, .big {
+  font-size: xx-large;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: var(--primary5);
+  margin-bottom: 8px;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: var(--neutral5);
+  margin-bottom: 16px;
+}
+
+h3 {
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: var(--neutral5);
+  margin-bottom: 8px;
+}
+
+small {
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+}
+
+mark {
+  padding: 0 2px;
+  background-color: var(--primary1);
+  color: var(--primary3);
+}
+
+.code {
+  padding: 0 2px;
+  background-color: var(--neutral2);
+  font-family: monospace;
+}
+
+img {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+  -webkit-user-drag: none;
+   -khtml-user-drag: none;
+     -moz-user-drag: none;
+      -ms-user-drag: none;
+          user-drag: none;
+}
+
+hr {
+  height: 2px;
+  width: 100%;
+  max-width: 720px;
+  margin: 16px 0 32px 0;
+
+  border: none;
+  border-radius: 8px;
+  background-color: var(--neutral2);
+}
+
+html {
+  margin-left: calc(100vw - 100%);
+  overflow: auto;
+}
+
+body {
+  height: 100vh;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+/* ############################################### MAIN */
+
+#main {
+  min-height: calc(100% - 256px - 64px);
+  width: calc(720px - 64px);
+  margin: 0 auto;
+  padding: 32px;
+
+  background-color: #EEE;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#main p {
+  margin-bottom: 16px;
+}
+
+/* ############################################### ABOUT */
+
+#main.about {
+  display: block;
+  border-radius: 0;
+
+  min-height: calc(100% - 256px);
+  width: calc(720px);
+  padding: 0;
+
+  background-color: transparent;
+}
+
+#main.about .project {
+  height: 128px;
+  width: calc(100% - 16px);
+  padding: 8px;
+
+  transition: all 0.3s ease;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main.about .project:hover {
+  background-color: var(--neutral2);
+}
+
+#main.about .project .img {
+  height: 128px;
+  width: 128px;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main.about .project img {
+  height: 128px;
+  width: auto;
+
+  pointer-events: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+#main.about .project .desc {
+  height: 100%;
+  width: calc(100% - 128px - 16px);
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#main.about .project .desc p {
+  text-align: left;
+}
+
+#main.about .project .desc .details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main.about .project .desc .details span {
+  font-size: 12px;
+  color: var(--neutral3);
+}

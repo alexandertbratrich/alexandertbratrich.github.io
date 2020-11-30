@@ -1,0 +1,32 @@
+#footer {
+  height: 128px;
+  width: calc(720px);
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#footer span {
+  color: var(--neutral3);
+  font-size: small;
+}
+
+#footer #logosmall {
+  height: 32px;
+  width: 32px;
+  margin-right: 4px;
+
+  background-image: url('../imgs/logo/bcsw.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

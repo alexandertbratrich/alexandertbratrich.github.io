@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+<title>Blue Cube Society</title>
+<description>A blog by Alexander T. Bratrich</description>
+<link>https://alexandertbratrich.github.io/</link>
+<image>
+<url>https://alexandertbratrich.github.io/imgs/favicon/favicon-32x32.png</url>
+<height>32</height>
+<width>32</width>
+<title>Blue Cube Society</title>
+<link>https://alexandertbratrich.github.io/</link>
+</image>
+<item>
+    <title>Hello, World.</title>
+<link>https://alexandertbratrich.github.io/post/helloworld</link>
+<guid>https://alexandertbratrich.github.io/post/helloworld</guid>
+<pubDate>Mon, 30 Nov 2020 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
