@@ -7,11 +7,11 @@
 
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 
-#main.article .title {
+#main.article > .title {
   min-height: 64px;
   width: calc(100% - 32px);
   padding: 16px;
@@ -120,6 +120,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#main.article .content a.external::after {
+  content: '';
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  background-image: url("../imgs/external.svg");
+  opacity: 0.75;
 }
 
 #main.article .content sup {
