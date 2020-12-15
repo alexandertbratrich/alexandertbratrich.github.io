@@ -236,11 +236,16 @@ body {
   flex-direction: column;
 }
 
+#main.index {
+  display: block !important;
+}
+
 #main p {
   margin-bottom: 16px;
 }
 
 #main .other {
+  float: left;
   width: calc(50%);
 }
 

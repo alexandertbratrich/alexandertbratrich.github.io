@@ -97,6 +97,14 @@
   padding: 16px;
 }
 
+#main.article .content .headerimage {
+  height: 128px;
+  width: 100%;
+  
+  background-size: cover;
+  background-position: center;
+}
+
 #main.article .content .tldr{
   width: calc(100% - 16px);
   padding: 8px;
@@ -161,4 +169,73 @@
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
+}
+
+#main.article .list {
+  width: 100%;
+  margin-bottom: 64px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#main.article .list .item{
+  position: relative;
+  width: calc(100% - 8px);
+  padding: 4px;
+  border-bottom: 1px solid var(--neutral3);
+}
+
+#main.article .list .item:last-of-type{
+  border-bottom: none;
+}
+
+#main.article .list .item p{
+  width: 80%;
+  margin-bottom: 4px;
+}
+
+#main.article .list .item span{
+  color: var(--neutral4);
+  font-size: small;
+}
+
+#main.article .list .item .details{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 4px;
+  background-color: var(--neutral1);
+}
+
+#main.article .list .item .details .rating1::after{
+  content: '😐';
+  margin-right: 8px;
+}
+
+#main.article .list .item .details .rating2::after{
+  content: '🙂';
+  margin-right: 8px;
+}
+
+#main.article .list .item .details .rating3::after{
+  content: '😊';
+  margin-right: 8px;
+}
+
+#main.article .list .item .details .rating4::after{
+  content: '😄';
+  margin-right: 8px;
+}
+
+#main.article .list .item .details .rating5::after{
+  content: '⭐';
+  margin-right: 8px;
+}
+
+#main.article .list .item .details .rating6::after{
+  content: '❤️';
+  margin-right: 8px;
 }
