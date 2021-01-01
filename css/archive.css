@@ -59,3 +59,8 @@
 #main.archive .list span {
   font-size: small;
 }
+
+#main.list .article span {
+  display: block;
+  width: 100%;
+}

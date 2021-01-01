@@ -97,6 +97,38 @@
   padding: 16px;
 }
 
+#main.article .content .image {
+  height: 128px;
+  width: 100%;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#main.article .content .sidenote {
+  border-left: 4px solid var(--neutral3);
+  padding-left: 4px;
+}
+
+#main.article .content .sidenote p {
+  color: var(--neutral3);
+  font-size: small;
+}
+
+#main.article .content .goal {
+  border-left: 4px solid var(--primary4);
+  padding: 8px;
+
+  background-color: var(--primary1);
+}
+
+#main.article .content .goal p {
+  color: var(--primary4);
+  margin: 0;
+  font-size: small;
+}
+
 #main.article .content .headerimage {
   height: 128px;
   width: 100%;
